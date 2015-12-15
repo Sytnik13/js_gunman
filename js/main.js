@@ -325,6 +325,7 @@ function Gunman(gunman_class,step1, step2, step3, ready,red_eyes, fire_position,
                     setTimeout(function () {
                         if (!$('#gunman').hasClass('check')) {
                             clearInterval(player_sec);
+                            fire_background();
                             audioShot.get(0).play();
                             audioDeath.get(0).play();
                             $gunman.off('click');
