@@ -52,7 +52,7 @@ section.modal_window {
     z-index: 99; }
 
 section.game {
-  background-image: url("img/bg.png");
+  background-image: url("../img/bg.png");
   background-size: contain;
   height: 500px; }
   section.game .fire_background {
@@ -80,7 +80,7 @@ section.game {
     cursor: pointer;
     width: 128px;
     height: 369px;
-    background: url("img/gunman.png");
+    background: url("../img/gunman.png");
     background-position: 0px 0px;
     z-index: 1; }
   section.game .gunman_isaac {
@@ -90,7 +90,7 @@ section.game {
     cursor: pointer;
     width: 130px;
     height: 369px;
-    background: url("img/gunman.png");
+    background: url("../img/gunman.png");
     background-position: 0px 0px;
     z-index: 1; }
   section.game .gunman {
@@ -100,7 +100,7 @@ section.game {
     cursor: pointer;
     width: 152px;
     height: 313px;
-    background: url("img/gunman.png");
+    background: url("../img/gunman.png");
     background-position: 0px 0px;
     z-index: 1; }
   section.game .gunman_enter {
@@ -152,7 +152,7 @@ section.game {
     cursor: pointer;
     width: 70px;
     height: 80px;
-    background: url("img/gunman.png");
+    background: url("../img/gunman.png");
     background-position: 0px 0px;
     z-index: 0;
     animation: rudolf_hat .9s ease 0s 2 alternate; }
@@ -173,7 +173,7 @@ section.game {
     cursor: pointer;
     width: 145px;
     height: 80px;
-    background: url("img/gunman.png");
+    background: url("../img/gunman.png");
     background-position: 0px 0px;
     z-index: 0;
     animation: diego_hat .9s ease 0s 2 alternate; }
@@ -194,7 +194,7 @@ section.game {
     cursor: pointer;
     width: 145px;
     height: 80px;
-    background: url("img/gunman.png");
+    background: url("../img/gunman.png");
     background-position: 0px 0px;
     z-index: 0;
     animation: freddies_hat .9s ease 0s 2 alternate; }

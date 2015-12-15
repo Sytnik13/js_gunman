@@ -359,7 +359,7 @@ function Gunman(gunman_class,step1, step2, step3, ready,red_eyes, fire_position,
 }
 
 function Game() {
-    randomGunman = Math.random() * (6000 - 1000) + 1000;
+    randomGunman = 1000 + Math.random() * (6000 - 1000);
 
     if (randomGunman >= 1000 && randomGunman <= 2000 ) {
         Gunman(diego.gunman_class, diego.step1, diego.step2, diego.step3, diego.ready, diego.red_eyes, diego.fire_position, diego.win1, diego.win2, diego.hide, diego.click);
