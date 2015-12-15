@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+</head>
+<body>
+<audio id="audio-intro" src="music/intro.m4a" preload="auto" loop="loop"></audio>
+<audio id="audio-fire" src="music/fire.m4a" preload="auto"></audio>
+<audio id="audio-shot" src="music/shot.m4a" preload="auto"></audio>
+<audio id="audio-death" src="music/death.m4a" preload="auto"></audio>
+<audio id="audio-win" src="music/win.m4a" preload="auto"></audio>
+<audio id="audio-shot-fall" src="music/shot-fall.m4a" preload="auto"></audio>
+<audio id="audio-wait" src="music/wait.m4a" preload="auto" loop="loop"></audio>
+<audio id="audio-foul" src="music/foul.m4a" preload="auto"></audio>
+
+<section class="modal_window">
+    <p>WILD</p>
+    <p>GUNMAN</p>
+    <p id="over">GAME OVER</p>
+    <div id="str_button">START</div>
+</section>
+<section class="top">
+    <div>
+        <p>You:</p>
+        <span>0.<span id="player_sec">0</span></span>
+        <br>
+        <p>Gunman:</p>
+        <span id="gunman_timer">0.<span id="gunman_sec">8</span></span>
+    </div>
+</section>
+<section class="game">
+    <div class="fire_background"></div>
+
+    <div id="info_fire" ></div>
+
+    <div id="gunman" ></div>
+    <div id="hat"></div>
+
+</section>
+<section class="bottom">
+    <div>
+        <p>$</p>
+        <span id="reward">0</span>
+        <br>
+        <p>REWARD</p>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

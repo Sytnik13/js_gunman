@@ -1,0 +1,224 @@
+@font-face {
+  font-family: Pixel Emulator;
+  src: url(PixelEmulator.otf); }
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Pixel Emulator'; }
+
+section.top {
+  background-color: #000000;
+  padding: 20px 0 20px 70%; }
+  section.top div {
+    position: relative; }
+    section.top div p {
+      display: inline-block;
+      margin: 0;
+      color: #808080;
+      font-size: 36px; }
+    section.top div span {
+      display: inline-block;
+      color: #ffffff;
+      font-size: 36px; }
+
+section.modal_window {
+  position: absolute;
+  width: 100%;
+  height: 748px;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 999; }
+  section.modal_window p {
+    text-align: center;
+    color: green;
+    font-size: 75px; }
+  section.modal_window #over {
+    display: none;
+    font-size: 85px;
+    color: white; }
+  section.modal_window #str_button {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    padding: 10px 10px 10px 20px;
+    width: 275px;
+    opacity: 1;
+    font-family: "Pixel Emulator";
+    border-radius: 5px;
+    font-size: 75px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    z-index: 99; }
+
+section.game {
+  background-image: url("img/bg.png");
+  background-size: contain;
+  height: 500px; }
+  section.game .fire_background {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 0;
+    z-index: 0; }
+  section.game #info {
+    margin: 0 auto;
+    top: 0px;
+    content: "Fire!!!";
+    padding: 10px 10px 10px 20px;
+    width: 275px;
+    font-family: "Pixel Emulator";
+    border-radius: 5px;
+    font-size: 75px;
+    background-color: red;
+    color: black;
+    z-index: 99; }
+  section.game .gunman_tall {
+    position: absolute;
+    right: 500px;
+    top: 160px;
+    cursor: pointer;
+    width: 128px;
+    height: 369px;
+    background: url("img/gunman.png");
+    background-position: 0px 0px;
+    z-index: 1; }
+  section.game .gunman_isaac {
+    position: absolute;
+    right: 650px;
+    top: 160px;
+    cursor: pointer;
+    width: 130px;
+    height: 369px;
+    background: url("img/gunman.png");
+    background-position: 0px 0px;
+    z-index: 1; }
+  section.game .gunman {
+    position: absolute;
+    right: 500px;
+    top: 230px;
+    cursor: pointer;
+    width: 152px;
+    height: 313px;
+    background: url("img/gunman.png");
+    background-position: 0px 0px;
+    z-index: 1; }
+  section.game .gunman_enter {
+    -webkit-animation: gunman_enter 5s;
+    -moz-animation: gunman_enter 5s;
+    animation: gunman_enter 5s linear; }
+@-webkit-keyframes gunman_enter {
+  from {
+    right: -170px; }
+  to {
+    right: 45%; } }
+@-moz-keyframes gunman_enter {
+  from {
+    right: -150px; }
+  to {
+    right: 45%; } }
+  section.game .gunman_out {
+    -webkit-animation: gunman_out 5s;
+    -moz-animation: gunman_out 5s;
+    animation: gunman_out 5s linear; }
+@-webkit-keyframes gunman_out {
+  from {
+    right: 45%; }
+  to {
+    right: 110%; } }
+@-moz-keyframes gunman_out {
+  from {
+    right: 45%; }
+  to {
+    right: 110%; } }
+  section.game .freddie_fall {
+    -webkit-animation: freddie_fall .5s ease 0s 2 alternate;
+    -moz-animation: freddie_fall .5s ease 0s 2 alternate;
+    animation: freddie_fall .5s ease 0s 2 alternate; }
+@-webkit-keyframes freddie_fall {
+  from {
+    top: 230px; }
+  to {
+    top: 200px; } }
+@-moz-keyframes freddie_fall {
+  from {
+    top: 230px; }
+  to {
+    top: 200px; } }
+  section.game .rudolf_hat {
+    position: absolute;
+    right: 45.5%;
+    top: 352px;
+    cursor: pointer;
+    width: 70px;
+    height: 80px;
+    background: url("img/gunman.png");
+    background-position: 0px 0px;
+    z-index: 0;
+    animation: rudolf_hat .9s ease 0s 2 alternate; }
+@-webkit-keyframes rudolf_hat {
+  from {
+    top: 160px; }
+  to {
+    top: 2px; } }
+@-moz-keyframes rudolf_hat {
+  from {
+    top: 352px; }
+  to {
+    top: 180px; } }
+  section.game .diego_hat {
+    position: absolute;
+    right: 45.5%;
+    top: 352px;
+    cursor: pointer;
+    width: 145px;
+    height: 80px;
+    background: url("img/gunman.png");
+    background-position: 0px 0px;
+    z-index: 0;
+    animation: diego_hat .9s ease 0s 2 alternate; }
+@-webkit-keyframes diego_hat {
+  from {
+    top: 352px; }
+  to {
+    top: 180px; } }
+@-moz-keyframes diego_hat {
+  from {
+    top: 352px; }
+  to {
+    top: 180px; } }
+  section.game .hat {
+    position: absolute;
+    right: 44.5%;
+    top: 410px;
+    cursor: pointer;
+    width: 145px;
+    height: 80px;
+    background: url("img/gunman.png");
+    background-position: 0px 0px;
+    z-index: 0;
+    animation: freddies_hat .9s ease 0s 2 alternate; }
+@-webkit-keyframes freddies_hat {
+  from {
+    top: 410px; }
+  to {
+    top: 180px; } }
+@-moz-keyframes freddies_hat {
+  from {
+    top: 410px; }
+  to {
+    top: 180px; } }
+section.bottom {
+  background-color: #000000;
+  padding: 20px 0 20px 10%; }
+  section.bottom div p {
+    display: inline-block;
+    margin: 0;
+    color: #ffffff;
+    font-size: 36px; }
+  section.bottom div span {
+    display: inline-block;
+    color: #008000;
+    font-size: 36px; }
+
+/*# sourceMappingURL=style.css.map */
